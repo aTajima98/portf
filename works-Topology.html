@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
   <meta property='og:type' content='website'>
-  <meta property='og:title' content='WebデザイナーTARO YAMADA ポートフォリオ'>
+  <meta property='og:title' content="TAJIMA ポートフォリオ'>
   <meta property='og:url' content='URLが入る'>
-  <meta property='og:description' content='TARO YAMADAのポートフォリオサイトです。'>
+  <meta property='og:description' content='TAJIMAのポートフォリオサイトです。'>
   <meta property="og:image" content="img/ogp.png">
-  <meta name="description" content="TARO YAMADAのポートフォリオサイトです" />
-  <title>TARO YAMADA ポートフォリオ</title>
+  <meta name="description" content="TAJIMAのポートフォリオサイトです" />
+  <title>TAJIMA ポートフォリオ</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
@@ -26,14 +26,15 @@
     <header class="header ">
       <div class="container">
         <h1 class="header-logo">
-          <a href=".">TARO YAMADA</a>
+          <a href=".">PORTFOLIO</a>
         </h1>
         <nav class="gnav">
           <ul class="gnav-list">
-            <li class="gnav-item"><a href=".#works">WORKS</a></li>
-            <li class="gnav-item"><a href="./#skill">SKILL</a></li>
-            <li class="gnav-item"><a href="./#about">ABOUT</a></li>
-            <li class="gnav-item"><a href="./#contact">CONTACT</a></li>
+            <li class="gnav-item"><a href="#study">STUDY</a></li>
+            <li class="gnav-item"><a href="#works">WORKS</a></li>
+            <li class="gnav-item"><a href="#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -44,32 +45,45 @@
 
       <article class="article">
         <div class="article-container">
-          <h2 class="article-title">DesignXYZ様</h2>
+          <h2 class="article-title">トポロジー最適化を用いた橋の2Dモデル</h2>
           <div class="article-body">
             <p>
-              <img src="img/works-sample.jpg" alt="">
+              <img src="img/Stamp_GA.jpg" alt="">
             </p>
             <p>
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります（作品について一言）
+              2021.08 Pythonで作成．<br>
+              DTU.dkで公開されているtopopt.pyを参考にして様々な条件下の2D橋モデルを作成しました．
             </p>
-            <h3>URL</h3>
-            <p><a href="https://yahoo.co.jp" target="_blank" rel="noopener">https://yahoo.co.jp</a></p>
-            <h3>担当</h3>
-            <p>デザイン・コーディング</p>
-            <h3>サイトの目的</h3>
-            <p>サービスの認知と新規クライアントの獲得</p>
-            <h3>ターゲット</h3>
-            <p>テキストが入りますテキストが入ります</p>
-            <h3>デザインについて</h3>
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/aTajima98/Topology-Opt-Bridge" target="_blank" rel="noopener">https://github.com/aTajima98/Topology-Opt-Bridge</a></p>
+            <h3>処理手順</h3>
             <p>
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。<br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                1. 解個体集団を初期化<br>
+                2. 個体集団の評価<br>
+                3. 次世代に残す個体の選択<br>
+                4. 交叉の適応<br>
+                5. 突然変異の適応<br>
+                6. 2~5の操作を最大世代数に達するまで繰り返す
+            </p>
+            <h3>トポロジー最適化について</h3>
+            <p>
+              遺伝的アルゴリズムは，生物の進化の過程を模倣したアルゴリズムです．自然界において，環境に適応できなかった個体は死滅し，環境に適応した個体のみ生き続けることができます．
+              また，生物は環境に適応するように進化を続け，その子孫を増やしてきました．<br>
+              この様な，生物の進化の過程を遺伝的アルゴリズムは用いています．良い個体体が残るように個体の選択を行い，
+              個体を交叉させることで，次世代の個体を生み出します．ここで，突然変異を適応することで，
+              今までに見つけることができなかったもっと良い個体を見つけることや，個体が似ないように(多様性を持たせる)ことを期待して，突然変異を行います．
+     　　　　選択・交叉・突然変異を繰り返すことで，個体集団はより良い値を持つ個体集団へと進化していきます．
+                                                                                                  
             </p>
             <p>
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            遺伝的アルゴリズムは，選択・交叉・突然変異の方法がたくさん考案されています．本プログラムは，交叉に一様順序交叉と突然変異に2点交換を用いている．さらに賢く進化させる一つの案に，選択でエリート選択を用いることなどが挙げられる．
             </p>
             <h3>コーディングについて</h3>
             <p>
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+              Pythonで役800行でコーディングを行いました．プログラムは，GitHubに置いてあります．<br>
+              選択，交叉，突然変異などの操作を関数で独立して書いているため，突然変異の変更が容易に行うことができます．
+              
+                                                                                      
             </p>
           </div>
           <div class="home-link">
