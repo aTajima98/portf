@@ -45,25 +45,26 @@
 
       <article class="article">
         <div class="article-container">
-          <h2 class="article-title">遺伝的アルゴリズム(GA)を用いた乗換案内</h2>
+          <h2 class="article-title">UNDXを用いた車の設計</h2>
           <div class="article-body">
             <p>
               <img src="img/GA_Big.jpg" alt="">
             </p>
             <p>
-              2020.08 Pythonで製作．<br>
-              西武線アプリスタンプラリーでn個のスタンプ取得時間が最短となる経路をGAで求めました．
+              2021.01 Pythonで製作．<br>
+              BoxCar2Dシミュレーションを使ってより長く走る車の設計をUNDXで求めました．
             </p>
             <h3>GitHub</h3>
-            <p><a href="https://github.com/aTajima98/StampRally_GA" target="_blank" rel="noopener">https://github.com/aTajima98/StampRally_GA</a></p>
+            <p><a href="https://github.com/aTajima98/BoxCar_UNDX" target="_blank" rel="noopener">https://github.com/aTajima98/BoxCar_UNDX</a></p>
             <h3>処理手順</h3>
             <p>
-                1. 解個体集団を初期化<br>
-                2. 個体集団の評価<br>
-                3. 次世代に残す個体の選択<br>
-                4. 交叉の適応<br>
-                5. 突然変異の適応<br>
-                6. 2~5の操作を最大世代数に達するまで繰り返す
+                1. 個体集団をランダムに生成<br>
+                2. 個体情報から車を設計し，シミュレーションから個体の評価<br>
+                3. 交叉(UNDX)の適用<br>
+                4. 突然変異の適用<br>
+                5. 次世代に残す個体の選択<br>
+                6. 2~5の操作を収束するまで繰り返す．
+
             </p>
             <h3>遺伝的アルゴリズムについて</h3>
             <p>
