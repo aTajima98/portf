@@ -48,7 +48,7 @@
           <h2 class="article-title">チャットボット作成</h2>
           <div class="article-body">
             <p>
-              <img src="img/GA_Big.jpg" alt="">
+              <img src="img/chatbot_Big.jpg" alt="">
             </p>
             <p>
               2021.02 Pythonで作成．<br>
@@ -74,12 +74,12 @@
             </p>
             <p>
             - 形態素解析:sep_by_janome(text)<br>
-              - 入力された文章に対してjanomeによって単語に分割し，分割された単語間にスペースを挟んで連結する．<br>
+              ......入力された文章に対してjanomeによって単語に分割し，分割された単語間にスペースを挟んで連結する．<br>
             - 文章をベクトル化:model.infer_vector(形態素解析した文章)<br>
-              - 形態素解析で単語に分割された文章をベクトル化する．ベクトル化のモデルに，model = Doc2Vec.load("jawiki.doc2vec.dbow300d.model")の学習済みモデルを使用した．<br>
-              - 学習済みモデルは，[使用した学習済みモデル]に出典を示す．<br>
+              ......形態素解析で単語に分割された文章をベクトル化する．ベクトル化のモデルに，model = Doc2Vec.load("jawiki.doc2vec.dbow300d.model")の学習済みモデルを使用した．<br>
+              ......学習済みモデルは，[使用した学習済みモデル]に出典を示す．<br>
            - コサイン類似度を計算:np.dot(input_vec, v2) / (np.linalg.norm(input_vec) * np.linalg.norm(v2))...v2は質問文ベクトル<br>
-              - 入力文と各質問文間の類似度を計算．<br>
+              ......入力文と各質問文間の類似度を計算．<br>
             </p>
             <h3>コーディングについて</h3>
             <p>
