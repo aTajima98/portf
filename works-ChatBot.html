@@ -81,12 +81,17 @@
            - コサイン類似度を計算:np.dot(input_vec, v2) / (np.linalg.norm(input_vec) * np.linalg.norm(v2))...v2は質問文ベクトル<br>
               ......入力文と各質問文間の類似度を計算．<br>
             </p>
+            <p>
+             [使用した学習済みモデル]<br>
+             「日本語WIKIPEDIAで学習したDOC2VECモデル」.OUT-OF THE-BOX.2019/01/22. < https://yag-ays.github.io/project/pretrained_doc2vec_wikipedia/ >
+            </p>
             <h3>コーディングについて</h3>
             <p>
               Pythonで約150行でコーディングを行いました．プログラムは，GitHubに置いてあります．<br>
               一問一答集は漫画「ピンポン」から自作しました．<br>
               文章のベクトル化に学習済みモデルを使用しています．これは，自作した一問一答集で学習したモデルを使うよりもよい精度が出たためです．<br>
               チャットを行うサービスにMastodonを利用しています．<br>
+              <img src="img/chat_ex.jpg" alt="">                
             </p>
           </div>
           <div class="home-link">
